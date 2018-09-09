@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {font-family: Arial;}
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: azure;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            -webkit-animation: fadeEffect 1s;
+            animation: fadeEffect 1s;
+            background-color: honeydew;
+            /*
+            background-image: url("beach.jpeg");
+            background-size: cover;
+            height: 500px;
+            */
+        }
+        .tabcontent1 {
+            display: none;
+            padding: 6px 12px;
+            -webkit-animation: fadeEffect 1s;
+            animation: fadeEffect 1s;
+            background-color: orange;
+        }
+        .tabcontent2 {
+            display: none;
+            padding: 6px 12px;
+            -webkit-animation: fadeEffect 1s;
+            animation: fadeEffect 1s;
+            background-color: yellow;
+            background-size: cover;
+        }
+        .tabcontent3 {
+            display: none;
+            padding: 6px 12px;
+            -webkit-animation: fadeEffect 1s;
+            animation: fadeEffect 1s;
+            background-color: mediumpurple;
+        }
+
+        /* Fade in tabs */
+        @-webkit-keyframes fadeEffect {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes fadeEffect {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+
+<h3>Fade in Tabs</h3>
+
+<script type="text/javascript" src='Main.js'> </script>
+
+
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+    <button class="tablinks" onclick="openCity(event, 'New Zealand')">New Zealand</button>
+    <button class="tablinks" onclick="openCity(event, 'Switzerland')">Switzerland</button>
+    <button class="tablinks" onclick="openCity(event, 'Taiwan')">Taiwan</button>
+</div>
+
+<div id="Home" class="tabcontent">
+
+    <h3>Home</h3>
+    <p>Home</p>
+    <img src="beach.jpeg">
+</div>
+<div id="New Zealand" class="tabcontent1">
+    <h3>New Zealand</h3>
+    <p></p>
+</div>
+
+<div id="Switzerland" class="tabcontent2">
+    <h3></h3>
+    <p></p>
+</div>
+
+<div id="Taiwan" class="tabcontent3">
+    <h3></h3>
+    <p></p>
+</div>
+
+</body>
+</html>
